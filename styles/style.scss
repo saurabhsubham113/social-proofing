@@ -1,0 +1,146 @@
+$color-magenta: hsl(300, 43%, 22%);
+$color-soft-pink: hsl(333, 80%, 67%);
+$color-grayish-magenta: #937b92;
+$color-light-grayish-magenta: rgb(247, 242, 247);
+$color-white: rgb(255, 255, 255);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 1.5rem;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 80%;
+}
+
+.info {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem 0;
+  .content {
+    width: 40%;
+
+    .heading {
+      font-weight: bold;
+      font-size: 4.5rem;
+      padding-top: 4rem;
+      padding-bottom: 1rem;
+      color: $color-magenta;
+    }
+    .body {
+      color: $color-grayish-magenta;
+      line-height: 1.5;
+    }
+  }
+
+  .ratings {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .reviews {
+      width: 40rem;
+      background-color: $color-light-grayish-magenta;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      &:nth-child(1) {
+        margin-left: -12rem;
+      }
+      &:nth-child(2) {
+        margin: 3rem 0;
+        margin-left: -6rem;
+      }
+      &:nth-child(3) {
+        margin-left: 0rem;
+      }
+
+      .stars {
+        margin-left: 1rem;
+      }
+      .review {
+        padding: 1.5rem 0rem;
+        font-weight: 700;
+        color: $color-magenta;
+        display: inline;
+      }
+    }
+  }
+}
+
+.cards {
+  margin-top: -7rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  color: $color-white;
+  background-color: $color-magenta;
+  padding: 3rem;
+  border-radius: 1rem;
+  img {
+    border-radius: 50%;
+    width: 5rem;
+  }
+
+  &:nth-child(2) {
+    margin: 0 4rem;
+    margin-top: 8rem;
+  }
+  &:last-child {
+    margin-top: 16rem;
+  }
+  .profile {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 3rem;
+    }
+    .title {
+      font-weight: 300;
+      margin-top: 0.6rem;
+      font-size: 1.4rem;
+      color: $color-soft-pink;
+    }
+  }
+
+  .comments {
+    line-height: 1.5;
+  }
+}
+
+.footer {
+  margin-top: 5rem;
+
+  background-color: $color-light-grayish-magenta;
+  .attribution {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+
+    a {
+      text-decoration: none;
+      color: #52a12f;
+    }
+  }
+}
