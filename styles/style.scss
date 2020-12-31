@@ -131,8 +131,11 @@ main {
 
 .footer {
   margin-top: 5rem;
-
+  height: 9vh;
   background-color: $color-light-grayish-magenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .attribution {
     font-size: 1.5rem;
     text-align: center;
